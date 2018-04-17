@@ -1,0 +1,68 @@
+@import "bootstrap";
+
+
+body {
+  height: 1800px;
+  margin: 0;
+  padding: 0px;
+  background-image: url("../images/transparent-square-tiles.png");
+  background-color: #c5d5cb;
+
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+  background-color: #ffffff;
+}
+
+ul li a {
+  text-decoration: none;
+  float: left;
+  padding: 15px;
+  padding-right: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+
+}
+
+.navbar li a:active {
+  text-decoration: none;
+  list-style: none;
+  color: #000000;
+}
+
+ul.navbar li a:hover {
+  color: #ffffff;
+  background-color: #d1d1e0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+  font-size: 60px;
+}
+
+img {
+  border:2px solid #000000;
+  margin-bottom: 15px;
+ }
+.center {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+
+
+ div.col-sm-3 {
+   color: #9fa8a3
+
+ }

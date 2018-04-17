@@ -1,0 +1,149 @@
+body {
+margin: 0px;
+padding: 0px;
+}
+
+.bckgrnd_img  {
+  background-color: #ff2cdd;
+  background-image: url("../images/3px-tile.png");
+}
+
+.grad_btn{
+  background: linear-gradient(green, yellow);
+
+}
+.grid-container {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-gap: 10px;
+  background-color: #ffa366;
+  padding: 10px;
+}
+
+.grid-container > div {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  height: 250px;
+}
+
+.rounded_borders {
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+button.small {
+  font-size: 5px;
+}
+
+
+
+
+
+h1{
+  text-align: center;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.rounded {
+  border-radius: 3px;
+}
+
+.potato {
+  background-image: url("../images/germinatingpotato.jpg");
+  background-position: center;
+  background-size: contain;
+  background-color: white;
+  height: 300px;
+  background-repeat: no-repeat, repeat;
+  margin-top: 6px;
+}
+
+.circle_gradient {
+  background: red; /* For browsers that do not support gradients */
+  background: radial-gradient(circle, #ffffff, #d1d1e0, #ffb3cc); /* Standard syntax (must be last) */
+}
+
+.vertical_button > button {
+  background-color: #4CAF50;
+  border: 1px solid green;
+  padding: 10px 24px; /* Some padding */
+  width: 20%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+
+.vertical_button button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.chubs  {
+  width: 200px;
+  background-position: ;
+  border-radius: 5px;
+  box-shadow: 0 9px #999;
+}
+
+.chubs:hover {background-color: #3e8e41}
+
+.chubs:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  /* transform: rotate(1turn); */
+  /* transform: scale(0.5) translate(-100%, -100%); */
+}
+
+.twicky:active {
+  transform: scale(0.5) translate(-100%, -100%);
+}
+
+div.oh_no  {
+  border: 5px solid blue;
+  transform: translate(30px, 20px) rotate(20deg);
+  width: 250px;
+  height: 250px;
+  /* background-color: #ffdb4d; */
+  background: linear-gradient(orange, yellow);
+
+  opacity: 0.5;
+}
+
+.oh_no:hover{
+  opacity: 1;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "hd hd hd hd   hd   hd   hd   hd   hd"
+    "sd sd sd main main main main main main"
+    "ft ft ft ft   ft   ft   ft   ft   ft";
+}
+
+.header {
+  grid-area: hd;
+}
+.footer {
+  grid-area: ft;
+}
+.content {
+  grid-area: main;
+}
+.sidebar {
+  grid-area: sd;
+}
